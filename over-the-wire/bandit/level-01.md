@@ -9,7 +9,7 @@ host: **bandit.labs.overthewire.org**
 nazwa użytkownika: bandit1
 hasło: sprawdz level-00
 
-ssh bandit1@bandit1.labs.overthewire.org -p 2220
+ssh bandit1@bandit.labs.overthewire.org -p 2220
 
 Przydatne komendy:
 ssh z flagą -p
