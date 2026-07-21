@@ -1,4 +1,4 @@
-# Bandit Level 03
+# Bandit Level 04
 
 ## Goal
 
