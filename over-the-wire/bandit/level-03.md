@@ -35,7 +35,7 @@ ls
 
 W tym levelu problemem jest to, że folder jest ukryty.
 
-Ukryte foldery, mozemy zobacazym w prosty sposob
+Ukryte foldery, mozemy zobaczyć w prosty sposob
 
 komenda:
 
