@@ -42,7 +42,7 @@ cat --spaces in this filename-- dostaniemy blad bo slowo spaces zostanie potrakt
 
 Musimy uzyc argumentu -- przed nazwa pliku z -/--.
 
-Opcja -- mowi systemowi ze to co jest po tej opcji jest plikiem ktory chcemy wyswietlic a nie agumentem programu.
+Opcja -- mowi systemowi ze to co jest po tej opcji jest plikiem ktory chcemy wyswietlic a nie argumentem programu.
 
 Dodatkowo ze względu na spacje pomiedzy slowami, musimy cala nazwe pliku opakowac w " ".
 
