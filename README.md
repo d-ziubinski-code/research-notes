@@ -1,46 +1,104 @@
-\# Cybersecurity Notes
+# 🛡️ Cybersecurity Notes
 
+To repozytorium stanowi moją osobistą bazę wiedzy, dokumentującą naukę poprzez praktyczne laboratoria z zakresu cyberbezpieczeństwa, wyzwania związane z bezpieczeństwem aplikacji webowych oraz ćwiczenia z offensive security.
 
+Celem repozytorium jest stworzenie uporządkowanego zbioru notatek opisujących poznane koncepcje, metodyki, narzędzia i techniki wykorzystywane podczas rozwiązywania praktycznych zadań inspirowanych rzeczywistymi scenariuszami.
 
-Personal notes from hands-on security labs.
+> **Uwaga:** Repozytorium koncentruje się na dokumentowaniu procesu nauki, a nie publikowaniu gotowych rozwiązań. Wrażliwe informacje, takie jak hasła, dane logowania, flagi czy inne elementy umożliwiające ukończenie wyzwań, są celowo pomijane tam, gdzie ma to zastosowanie.
 
+---
 
+# 🎯 Cele
 
-\## Platforms
+- Budowanie długoterminowej bazy wiedzy z zakresu cyberbezpieczeństwa.
+    
+- Dokumentowanie poznanych technik, metodyk oraz narzędzi.
+    
+- Rozwijanie umiejętności tworzenia przejrzystej dokumentacji technicznej.
+    
+- Śledzenie postępów na platformach edukacyjnych związanych z cyberbezpieczeństwem.
+    
+- Budowanie publicznego portfolio pokazującego systematyczny rozwój i praktyczne umiejętności.
+    
 
+---
 
+# 📚 Aktualnie realizowane platformy
 
-\- OverTheWire
+## OverTheWire
 
-&#x20; - Bandit
+Obecnie w trakcie:
 
-&#x20; - Natas
+- ✅ Bandit
+    
 
+---
 
+## PortSwigger Web Security Academy
 
-\- PortSwigger Web Security Academy
+Planowane zagadnienia:
 
-&#x20; - Authentication
+- Authentication
+    
+- Access Control
+    
+- SQL Injection
+    
+- Cross-Site Scripting (XSS)
+    
+- Cross-Site Request Forgery (CSRF)
+    
+- Server-Side Request Forgery (SSRF)
+    
+- XML External Entity Injection (XXE)
+    
+- Command Injection
+    
+- File Path Traversal
+    
+- File Upload Vulnerabilities
+    
+- Insecure Deserialization
+    
+- OAuth Authentication
+    
+- Web Cache Poisoning
+    
+- HTTP Request Smuggling
+    
+- WebSockets
+    
+- JWT
+    
+- GraphQL
+    
+- API Testing
+    
+- Business Logic Vulnerabilities
+    
+- Race Conditions
+    
+- Prototype Pollution
+    
+- Clickjacking
+    
+- Information Disclosure
+    
+- Server-Side Template Injection (SSTI)
+    
 
-&#x20; - SQL Injection
+---
 
-&#x20; - SSRF
+# 📈 Postęp
 
-&#x20; - XXE
+|Platforma|Status|
+|---|---|
+|OverTheWire Bandit|🟢 W trakcie|
+|OverTheWire Natas|⚪ Planowane|
+|PortSwigger Web Security Academy|⚪ Planowane|
 
-&#x20; - CSRF
+---
 
-&#x20; - ...
+# 📌 Zastrzeżenie
 
-
-
-\## Goal
-
-
-
-These notes document my learning process, methodologies, and observations while solving practical cybersecurity challenges.
-
-
-
-Sensitive information such as credentials, flags, and answers is intentionally omitted where appropriate.
-
+Notatki zostały przygotowane wyłącznie w celach edukacyjnych. Wszystkie opisane techniki są ćwiczone wyłącznie w legalnych środowiskach laboratoryjnych, takich jak OverTheWire oraz PortSwigger Web Security Academy.
