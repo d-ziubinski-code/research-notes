@@ -38,9 +38,9 @@ W tym levelu problemem jest to, że w folderze w ktorym jest nasz plik, jest kil
 
 Plik ktory musimy znalezc to plik czytelny dla czlowieka, plik zajmujący 1033 bajty miejsca i plik ktory nie jest executable
 
-Mozemy to zrobic za pomoca pipeline'u oddzielajac komendy za pomoca |
+Mozemy to zrobic za pomoca komendy find:
 
-file -i inhere/* | find -size 1033c
+find inhere -type f -size 1033c ! -executable
 ./inhere/maybehere07/.file2
 
 nasteonie wyswietlamy zawartosc
