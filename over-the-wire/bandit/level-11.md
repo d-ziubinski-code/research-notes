@@ -113,3 +113,15 @@ Dostajemy hasło:
 - `chr()` zamienia kod ASCII na znak.
 - Operator `%` pozwala "zawinąć" alfabet po przekroczeniu litery `Z` lub `z`.
 - Problem można rozwiązać zarówno własnym skryptem, jak i narzędziami systemowymi.
+
+### Python one-line solution
+
+Zamiast przechodzić do tmp i tworzyć oddzielny plik możemy stworzyć jednolinijkowy skrypt:
+
+`python3 -c "import codecs; print(codecs.decode(open('data.txt').read(), 'rot13'))"`
+### Linux one-line solution
+
+Jeśli nie chcemy wymyślać koła na nowo, możemy użyć:
+
+`cat data.txt | tr 'A-Za-z' 'N-ZA-Mn-za-m'`
+
