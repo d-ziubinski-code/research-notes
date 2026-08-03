@@ -15,3 +15,9 @@ Istnieją trzy główne typy uwierzytelniania:
 - Coś, czym jesteś lub co robisz. Na przykład Twoje dane biometryczne lub wzorce zachowań. Czasami nazywa się je "czynnikami wrodzonymi."
 
 Mechanizmy uwierzytelniania wykorzystują szereg technologii w celu weryfikacji jednego lub więcej z tych czynników.
+
+### 02. Jaka jest różnica pomiędzy uwierzytelnianiem a autoryzacją?
+
+Uwierzytelnianie odpowiada za sprawdzenie, czy użytkownik jest faktycznie tym za kogo się podaje.
+
+Autoryzacja wchodzi do gry już po uwierzytelnieniu i polega na sprawdzeniu czy użytkownik może coś zrobić, czy ma do czegoś uprawnienia.
