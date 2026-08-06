@@ -18,6 +18,7 @@ Przydatne komendy:
 ssh z flagą -p
 
 ### Solution
+
 W levelu 13 dostaliśmy podpowiedź: `The password for the next level is stored in **/etc/bandit_pass/bandit14 and can only be read by user bandit14**`
 
 Po zalogowaniu jako `bandit14` musimy najpierw znaleźć aktualne hasło. Jak wskazuje podpowiedź w levelu 13, hasło użytkownika `bandit14` znajduje się w pliku: `/etc/bandit_pass/bandit14`
@@ -39,8 +40,6 @@ Po uruchomieniu komendy połączenie pozostanie otwarte i będzie czekało.
 Wpisujemy hasło użytkownika `bandit14`
 
 Otrzymujemy nowe hasło :)
-### Lessons learned
-
 ### Lessons learned
 
 - `nc` (netcat) pozwala komunikować się bezpośrednio z usługami działającymi przez TCP/UDP.
