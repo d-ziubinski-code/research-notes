@@ -49,3 +49,6 @@ Otrzymujemy nowe hasło :)
 - Pipe (`|`) pozwala przekazywać wynik jednego polecenia jako wejście do drugiego programu.
 - Komunikacja klient-serwer może odbywać się bez SSH — wystarczy bezpośrednie połączenie TCP z odpowiednim portem.
 - Narzędzia takie jak `ss`, `netstat`, `lsof` oraz `nmap` pozwalają sprawdzić, jakie usługi działają i jakie porty są otwarte.
+
+## Related projects -
+[Python TCP Server](https://github.com/svmod3/toolbox/tree/main/networking/tcp/python/tcp-server) - [Python TCP Client](https://github.com/svmod3/toolbox/tree/main/networking/tcp/python/tcp-client)
