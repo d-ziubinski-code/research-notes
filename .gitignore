@@ -3,3 +3,18 @@ over-the-wire/bandit/hasla-bandit.md
 hasla.md
 picoCTF
 PortSwigger/portswigger_instrukcja.md
+
+# Environment variables
+.env
+
+# Python virtual environment
+venv/
+.venv/
+
+# Cache
+__pycache__/
+*.pyc
+
+# IDE
+.vscode/
+.idea/
