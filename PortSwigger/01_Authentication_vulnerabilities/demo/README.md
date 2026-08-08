@@ -1,9 +1,9 @@
 # Authentication Lab
 
-Prosta aplikacja webowa stworzona do nauki bezpieczeństwa mechanizmów logowania.
+Prosta aplikacja webowa stworzona do zademonstrowania podatności Login Enumerate i password brute-force.
 
-Projekt pozwala przećwiczyć:
-- działanie formularzy logowania
+Pozwala przećwiczyć podstawy:
+- działania formularzy logowania
 - komunikację HTTP frontend ↔ backend
 - analizę podatności związanych z uwierzytelnianiem
 - testowanie za pomocą Burp Suite i własnych skryptów Python
@@ -13,7 +13,6 @@ Projekt pozwala przećwiczyć:
 - FastAPI
 - Python
 - HTML
-- JavaScript
 
 ## Goal
 
