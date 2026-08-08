@@ -1,19 +1,25 @@
-# Authentication Lab
+# Vulnerable Auth App
 
-Prosta aplikacja webowa stworzona do zademonstrowania podatności Login Enumerate i password brute-force.
+Prosta aplikacja webowa napisana w celu zademonstrowania podatności Login Enumeration oraz Password Brute-Force.
 
-Pozwala przećwiczyć podstawy:
-- działania formularzy logowania
-- komunikację HTTP frontend ↔ backend
-- analizę podatności związanych z uwierzytelnianiem
-- testowanie za pomocą Burp Suite i własnych skryptów Python
+Służy do analizy błędów uwierzytelniania, automatyzacji ataków w Pythonie oraz testowania ruchu HTTP w Burp Suite. 
 
-## Technologies
+---
 
-- FastAPI
-- Python
-- HTML
+### Szczegóły Techniczne
 
-## Goal
+| Cecha | Opis |
+| :--- | :--- |
+| **Technologie** | Python, FastAPI, HTML |
+| **Główne podatności** | User Enumeration, Brak rate limiting / Lockout mechanism |
+| **Narzędzia testowe** | Burp Suite (Intruder), Autorskie skrypty Python |
 
-Stworzenie podatnej aplikacji, analiza problemów bezpieczeństwa oraz późniejsze wdrożenie zabezpieczeń.
+---
+
+### Struktura Projektu
+
+```text
+demo/
+├── main.py
+├── index.html
+└── requirements.tx
