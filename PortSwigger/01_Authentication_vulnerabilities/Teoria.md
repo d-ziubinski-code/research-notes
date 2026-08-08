@@ -2,7 +2,7 @@
 
 ## Authentication
 
-### 📖Definicja
+### Definicja
 
 Authentication (uwierzytelnianie) sprawdza, **kim jest użytkownik**.
 
@@ -49,7 +49,7 @@ Potem Authorization.
 
 ---
 
-## Authentication Vulnerabilities
+## Najczęstsze przyczyny podatności 
 
 Najczęstsze przyczyny:
 
@@ -119,11 +119,11 @@ Brute force jest skuteczny wtedy gdy aplikacja nie ogranicza prób logowania i p
 
 # Brute Force nazw użytkowników (User Enumeration)
 
-### 📖 Definicja
+### Definicja
 
 Nazwy użytkowników często są łatwe do odgadnięcia, ponieważ stosują przewidywaly schemat lub są publicznie ujawniane.
 
-### 🧠 Dlaczego to działa?
+### Dlaczego to działa?
 
 Atakujący nie musi zgadywać loginów, jeśli może je:
 
