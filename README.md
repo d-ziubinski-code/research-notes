@@ -1,60 +1,27 @@
-# 🛡️ Cybersecurity Learning Repository
+# Cybersecurity Learning Notes
 
-Moje repozytorium z notatkami i materiałami z nauki cyberbezpieczeństwa.
-
-Zawiera dokumentację laboratoriów, poznanych technik, narzędzi oraz zagadnień związanych z bezpieczeństwem aplikacji i systemów.
-
+Dokumentacja laboratoriów, analizy podatności oraz notatki z zakresu bezpieczeństwa aplikacji i systemów.
 
 ---
 
-## 📚 Platformy
+### Status i Zakres
 
-### OverTheWire
-
-- 🟢 Bandit
-    
-
-### PortSwigger Web Security Academy
-
-- 🟡 W trakcie
-    
+| Obszar / Platforma | Kontekst | Status |
+| :--- | :--- | :--- |
+| **OverTheWire: Bandit** | Podstawy Linuxa i wiersza poleceń | 15/30 |
+| **OverTheWire: Natas** | Podstawy bezpieczeństwa sieciowego | Soon |
+| **PortSwigger Academy** | OWASP Top 10, HTTP, Access Control | W trakcie |
 
 ---
 
-## 📈 Postęp
-
-|Platforma|Status|
-|---|---|
-|OverTheWire — Bandit|🟢 W trakcie|
-|PortSwigger Web Security Academy|🟡 W trakcie|
-|OverTheWire — Natas|⚪ Planowane|
-
----
-
-## 🎯 Aktualnie
-
-- Web Application Security
-    
-- HTTP
-    
-- Authentication
-    
-- Access Control
-    
-- Linux
-    
-- Burp Suite
-    
-- OWASP Top 10
-    
-
----
-
-## 📂 Struktura
+### Struktura Projektu
 
 ```text
 learning/
 ├── overthewire/
+│   ├── bandit/
+│   └── natas/
 ├── portswigger/
+│   ├──  01_Authentication_vulnerabilities/
+│   └──
 └── assets/
-```
