@@ -1,20 +1,20 @@
 # Cybersecurity Learning Notes
 
-Dokumentacja laboratoriów, analizy podatności oraz notatki z zakresu bezpieczeństwa aplikacji i systemów.
+Documentation of hands-on labs, vulnerability analysis, and notes covering application and system security.
 
 ---
 
-### Status i Zakres
+### Status & Scope
 
-| Obszar / Platforma | Kontekst | Status |
-| :--- | :--- | :--- |
-| **OverTheWire: Bandit** | Podstawy Linuxa i wiersza poleceń | 15/30 |
-| **OverTheWire: Natas** | Podstawy bezpieczeństwa sieciowego | Soon |
-| **PortSwigger Academy** | OWASP Top 10, HTTP, Access Control | W trakcie |
+| Area / Platform                      | Focus                                              | Status      |
+| :----------------------------------- | :------------------------------------------------- | :---------- |
+| **OverTheWire: Bandit**              | Linux and command-line fundamentals                | 15/34       |
+| **OverTheWire: Natas**               | Web security fundamentals                          | Soon        |
+| **PortSwigger Web Security Academy** | OWASP Top 10, HTTP, Authentication, Access Control | In Progress |
 
 ---
 
-### Struktura Projektu
+### Project Structure
 
 ```text
 learning/
@@ -22,6 +22,38 @@ learning/
 │   ├── bandit/
 │   └── natas/
 ├── portswigger/
-│   ├──  01_Authentication_vulnerabilities/
+│   ├── 01_Authentication_vulnerabilities/
 │   └──
 └── assets/
+```
+
+---
+
+# [PL] Notatki z Cyberbezpieczeństwa
+
+Dokumentacja laboratoriów praktycznych, analiza podatności oraz notatki z zakresu bezpieczeństwa aplikacji i systemów.
+
+---
+
+### Status i zakres
+
+| Obszar / Platforma                   | Zakres                                                 | Status    |
+| :----------------------------------- | :----------------------------------------------------- | :-------- |
+| **OverTheWire: Bandit**              | Podstawy Linuxa i wiersza poleceń                      | 15/34     |
+| **OverTheWire: Natas**               | Podstawy bezpieczeństwa aplikacji webowych             | Wkrótce   |
+| **PortSwigger Web Security Academy** | OWASP Top 10, HTTP, uwierzytelnianie, kontrola dostępu | W trakcie |
+
+---
+
+### Struktura projektu
+
+```text
+learning/
+├── overthewire/
+│   ├── bandit/
+│   └── natas/
+├── portswigger/
+│   ├── 01_Authentication_vulnerabilities/
+│   └──
+└── assets/
+```
