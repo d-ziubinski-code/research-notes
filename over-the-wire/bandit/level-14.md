@@ -51,4 +51,4 @@ Otrzymujemy nowe hasło :)
 - Narzędzia takie jak `ss`, `netstat`, `lsof` oraz `nmap` pozwalają sprawdzić, jakie usługi działają i jakie porty są otwarte.
 
 ## Related projects -
-[Python TCP Server](https://github.com/svmod3/toolbox/tree/main/networking/tcp/python/tcp-server) - [Python TCP Client](https://github.com/svmod3/toolbox/tree/main/networking/tcp/python/tcp-client)
+[Python TCP Server](https://github.com/d-ziubinski-code/toolbox/tree/main/networking/tcp/python/tcp-server) - [Python TCP Client](https://github.com/d-ziubinski-code/toolbox/tree/main/networking/tcp/python/tcp-client)
