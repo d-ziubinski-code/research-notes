@@ -7,10 +7,10 @@ Aby uzyskać hasło do poziomu 16, musimy przesłać hasło do obecnego poziomu 
 
 host: **bandit.labs.overthewire.org**
 
-nazwa użytkownika: bandit14
-hasło: sprawdz level-13
+nazwa użytkownika: bandit15
+hasło: sprawdz level-14
 
-ssh-i nazwa_pliku bandit14@bandit.labs.overthewire.org -p 2220
+ssh-i nazwa_pliku bandit15@bandit.labs.overthewire.org -p 2220
 
 Przydatne komendy:
 ssh z flagą -p
@@ -47,12 +47,9 @@ client
 server
 ```
 
-````
 W poprzednim poziomie używaliśmy:
 
-```bash
-nc localhost 30000
-````
+`nc localhost 30000`
 
 czyli zwykłego połączenia TCP.
 
