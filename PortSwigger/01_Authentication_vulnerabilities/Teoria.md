@@ -77,7 +77,7 @@ Możliwy dostęp do infrastruktury.
 
 ---
 
-## Co zapamiętać?
+### Co zapamiętać?
 
 Authentication = **Identity**
 
@@ -85,7 +85,7 @@ Authorization = **Permissions**
 
 ---
 
-## Jak myśli pentester?
+### Jak myśli pentester?
 
 Nie pytam:
 
@@ -151,7 +151,7 @@ Wiele stron ma zasady odnośnie hasła które zmuszają użytkowników do tworze
 
 Uzytkownicy, często tworzą hasła które są łatwe do zapamiętania a jedynie spełniają wymagania polityki haseł.
 
-# Dlaczego to działa?
+### Dlaczego to działa?
 
 Zamiast losowych znaków użytkownicy wybierają przewidywalne modyfikacje, np.:
 
@@ -162,7 +162,7 @@ Zamiast losowych znaków użytkownicy wybierają przewidywalne modyfikacje, np.:
 
 Takie schematy sprawiają, że atakujący może znacząco ograniczyć liczbę prób.
 
-# Co sprawdzam?
+### Co sprawdzam?
 
 - Czy aplikacja wymusza zmianę hasła?
 - Czy polityka haseł zachęca do przewidywalnych modyfikacji?
@@ -187,7 +187,7 @@ Dzięki temu atakujący może stworzyć listę poprawnych loginów przed rozpocz
 
 Możemy wykorzystać również proces rejestracji użytkownika, jeśli wpiszemy jakiś username i dostaniemy komunikat, że dana nazwa już istnieje to mamy informacje którą chcieliśmy :) 
 
-# Co sprawdzam?
+### Co sprawdzam?
 
 - Czy komunikaty błędów różnią się dla niepoprawnego loginu i niepoprawnego hasła?
 - Czy odpowiedzi mają różne kody HTTP?
@@ -287,7 +287,7 @@ Jeżeli dla jednego loginu odpowiedź trwa dłużej, może to oznaczać, że:
 
 ---
 
-# Dlaczego to działa?
+## Dlaczego to działa?
 
 Aplikacja wykonuje różne operacje dla:
 - istniejącego użytkownika,
@@ -308,3 +308,53 @@ Przy każdym formularzu logowania zadaję sobie trzy pytania:
 - Czy zmienia się **czas odpowiedzi**?
 
 Jeśli odpowiedź na którekolwiek z nich brzmi **tak**, mam trop, że aplikacja może ujawniać poprawne nazwy użytkowników.
+
+
+## Flawed Brute-Force Protection
+
+Ochrona przed atakiem typu brute-force polega na utrudnieniu automatyzacji oraz maksymalnym spowolnieniu tempa, z jakim atakujący może testować hasła.
+
+Standardowe metody ochrony:
+
+- **Account Lockout** – blokowanie konta użytkownika po zbyt wielu nieudanych próbach logowania.
+    
+- **IP Blocking** – blokowanie adresu IP atakującego, gdy generuje zbyt wiele prób w krótkim czasie.
+    
+
+Żaden z tych mechanizmów nie jest niezawodny, zwłaszcza jeśli w samej logice aplikacji znajduje się błąd.
+
+### Błąd logiki: Resetowanie licznika IP
+
+W niektórych aplikacjach licznik nieudanych prób przypisany do adresu IP **zeruje się automatycznie po każdym udanym zalogowaniu** z tego IP.
+### Dlaczego to działa (Ominięcie ochrony)?
+
+Atakujący może wpleść do swojej listy haseł (_wordlist_) poprawne poświadczenia do swojego własnego konta (np. co 3–4 nieudane próby):
+
+1. Atakujący wysyła kilka błędnych haseł na konto ofiary.
+    
+2. Atakujący wysyła 1 poprawne hasło na swoje własne konto.
+    
+3. Serwer resetuje licznik nieudanych prób dla tego IP.
+    
+4. Limit prób dla IP nigdy nie zostaje osiągnięty, a ochrona staje się bezużyteczna.
+
+## Podmiana adresu IP
+Serwer zlicza nieudane próby logowania per adres IP.
+
+Modyfikując nagłówek HTTP przy każdym żądaniu:
+```
+X-Forwarded-For: 1.2.3.1 
+X-Forwarded-For: 1.2.3.2
+```
+Możemy przy każdym żądaniu podstawić inną wartość pod payload.
+## Dlaczego działa?
+Aplikacja uznaje każde żądanie za pochodzące od zupełnie innego użytkownika
+
+
+### Co sprawdzam?
+
+- Czy aplikacja nakłada limit na nieudane próby logowania (na konto lub na IP)?
+    
+- Czy udane zalogowanie na dowolne konto zeruje licznik błędów dla adresu IP?
+    
+- Czy przeplatanie słownika poprawnym logowaniem pozwala całkowicie ominąć blokadę IP?
