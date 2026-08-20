@@ -1,23 +1,10 @@
-### Podatność
+## Podatności
+- **Username Enumeration** - enumeracja nazw użytkowników
+- **Password Brute Force** - atak słownikowy na hasło
 
-- **Username Enumeration** — enumeracja nazw użytkowników
-- **Password Brute Force** — atak słownikowy na hasło
+W tym labie różnica, której szukamy, **jest bardzo niewielka i nie jest widoczna na pierwszy rzut oka**.
 
-W tym labie różnica, której szukamy, jest bardzo niewielka i nie jest widoczna na pierwszy rzut oka.
-
-### Cel
-
-Znaleźć poprawną nazwę użytkownika, następnie przeprowadzić atak brute-force na hasło i uzyskać dostęp do konta użytkownika.
-
-Mamy podane dwie listy:
-
-- `usernames`
-- `passwords`
-
-W każdej z nich znajduje się poprawna wartość.
-
-### Solution
-
+## Metodologia: Lab 02
 Formularz logowania zwracał taki sam status HTTP dla każdej próby:
 
 ```
@@ -35,7 +22,6 @@ Invalid username or password.
 Dlatego konieczne było przeanalizowanie pełnej odpowiedzi HTTP i znalezienie subtelnej różnicy między requestami.
 
 ## Username Enumeration
-
 Pierwszym krokiem było znalezienie poprawnego username.
 
 Do tego wykorzystamy **Burp Suite Intruder**.
@@ -70,9 +56,7 @@ Invalid username or password
 
 Ta niewielka różnica może wskazywać na istniejącego użytkownika.
 
-
 ## Password Brute Force
-
 Mając prawdopodobnie poprawny username, przeprowadzamy atak słownikowy na hasło.
 
 Wklejamy listę haseł podaną w treści zadania jako payload w miejsce parametru `password`.
@@ -86,21 +70,14 @@ W wynikach widzimy, że większość requestów zwraca ten sam status HTTP, nato
 ```
 
 Jest to anomalia na tle pozostałych odpowiedzi i może wskazywać na poprawne uwierzytelnienie.
-
 Próbujemy zalogować się przy użyciu znalezionego wcześniej username oraz hasła.
 
 Aplikacja zwraca:
-
 ```
 Login Successful!
 ```
-
 Oznacza to, że znaleźliśmy poprawne dane logowania i przejęliśmy konto użytkownika.
-
----
-
-### Important
-
+## !
 - Nie zawsze kod HTTP wskazuje sukces lub porażkę — **zależy to od sposobu implementacji aplikacji**.
 - Podczas testowania logowania należy analizować pełną odpowiedź HTTP.
 - Warto zwracać uwagę na różnice w **status code, response length, response body, nagłówkach oraz redirectach**.
