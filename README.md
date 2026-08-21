@@ -8,7 +8,7 @@ Documentation of hands-on labs, vulnerability analysis, and notes covering appli
 
 | Area / Platform                      | Focus                                              | Status      |
 | :----------------------------------- | :------------------------------------------------- | :---------- |
-| **OverTheWire: Bandit**              | Linux and command-line fundamentals                | 15/34       |
+| **OverTheWire: Bandit**              | Linux and command-line fundamentals                | 18/34       |
 | **OverTheWire: Natas**               | Web security fundamentals                          | Soon        |
 | **PortSwigger Web Security Academy** | OWASP Top 10, HTTP, Authentication, Access Control | In Progress |
 
@@ -39,7 +39,7 @@ Dokumentacja laboratoriów praktycznych, analiza podatności oraz notatki z zakr
 
 | Obszar / Platforma                   | Zakres                                                 | Status    |
 | :----------------------------------- | :----------------------------------------------------- | :-------- |
-| **OverTheWire: Bandit**              | Podstawy Linuxa i wiersza poleceń                      | 15/34     |
+| **OverTheWire: Bandit**              | Podstawy Linuxa i wiersza poleceń                      | 18/34     |
 | **OverTheWire: Natas**               | Podstawy bezpieczeństwa aplikacji webowych             | Wkrótce   |
 | **PortSwigger Web Security Academy** | OWASP Top 10, HTTP, uwierzytelnianie, kontrola dostępu | W trakcie |
 
