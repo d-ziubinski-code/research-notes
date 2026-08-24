@@ -358,3 +358,24 @@ Aplikacja uznaje każde żądanie za pochodzące od zupełnie innego użytkownik
 - Czy udane zalogowanie na dowolne konto zeruje licznik błędów dla adresu IP?
     
 - Czy przeplatanie słownika poprawnym logowaniem pozwala całkowicie ominąć blokadę IP?
+
+
+## Blokowanie konta
+
+Jednym ze sposobów zapobieganie atakom brute-force jest blokowanie konta w przypadku spełnieniu określonych podejrzanych kryteriów.
+
+Podobnie jak w przypadku zwykłych błędów logowania, odpowiedzi z serwera wskazujące, że konto jest zablokowane, mogą również pomóc atakującemu w wyliczaniu nazw użytkowników.
+
+Zablokowanie konta zapewnia pewien poziom ochrony przed atakami ukierunkowanymi na konkretne konto. 
+
+W przypadku gdy atakujący próbuje uzyskać dostęp do dowolnego losowego konta, to podejście nie zapobiegnie temu w wystarczającym stopniu.
+
+Następująca metoda może posłużyć do ominięcia tej blokady:
+- Sporządź listę potencjalnych nazw użytkowników, które mogą być prawidłowe. Można to zrobić poprzez wyliczanie nazw użytkowników lub po prostu na podstawie listy popularnych nazw użytkowników.
+- Wybierz bardzo wąską listę haseł, które Twoim zdaniem przynajmniej jeden użytkownik prawdopodobnie posiada. Co najważniejsze, liczba wybranych haseł nie może przekraczać liczby dozwolonych prób logowania. Na przykład, jeśli ustaliłeś, że limit wynosi 3 próby, musisz wybrać maksymalnie 3 hasła do odgadnięcia.
+- Korzystając z narzędzia takiego jak Burp Inspector, wypróbuj każde z wybranych haseł w połączeniu z każdą z potencjalnych nazw użytkowników. W ten sposób możesz podjąć próbę ataku brute-force na każde konto bez uruchamiania blokady konta.
+- Wystarczy, że tylko jeden użytkownik użyje jednego z trzech haseł, aby przejąć kontrolę nad kontem.
+
+**Credential stuffing** polega na używaniu skradzionych danych logowania (login + hasło) z wcześniejszych wycieków, aby automatycznie próbować zalogować się na innych stronach. Atak działa, ponieważ wiele osób używa tych samych haseł w różnych serwisach.
+
+Blokowanie kont nie chroni przed takim atakiem, ponieważ każda para login–hasło może zostać sprawdzona tylko raz. W efekcie jeden atak może doprowadzić do przejęcia wielu kont.
