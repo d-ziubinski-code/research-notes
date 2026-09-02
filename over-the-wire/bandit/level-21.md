@@ -1,4 +1,4 @@
-# Bandit Level 20
+# Bandit Level 21
 
 ## Goal
 
